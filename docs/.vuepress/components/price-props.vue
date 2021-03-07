@@ -1,0 +1,143 @@
+<template>
+  <div>
+    <table width="100%">
+      <tr>
+        <th>参数</th>
+        <th>说明</th>
+        <th>类型</th>
+        <th>可选值</th>
+        <th>默认值</th>
+      <tr>
+        <td>unit</td>
+        <td>设置价格单位</td>
+        <td>String</td>
+        <td>——</td>
+        <td>￥</td>
+      </tr>
+      <tr>
+        <td>value</td>
+        <td>设置价格内容</td>
+        <td>String</td>
+        <td>——</td>
+        <td>0.00</td>
+      </tr>
+      <tr>
+        <td>mode</td>
+        <td>设置价格内容类型</td>
+        <td>String</td>
+        <td>number/text</td>
+        <td>text</td>
+      </tr>
+      <tr>
+        <td>deleted</td>
+        <td>价格是否为删除态</td>
+        <td>Boolean</td>
+        <td>——</td>
+        <td>false</td>
+      </tr>
+      <tr>
+        <td>reserveDigit</td>
+        <td>设置价格小数保留位数</td>
+        <td>Number</td>
+        <td>——</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>color</td>
+        <td>设置价格整体颜色</td>
+        <td>String</td>
+        <td>——</td>
+        <td>#3963BC</td>
+      </tr>
+      <tr>
+        <td>size</td>
+        <td>设置价格整体字体大小</td>
+        <td>String</td>
+        <td>——</td>
+        <td>14</td>
+      </tr>
+      <tr>
+        <td>bold</td>
+        <td>设置价格整体字体粗细</td>
+        <td>String</td>
+        <td>——</td>
+        <td>500</td>
+      </tr>
+      <tr>
+        <td>autofix</td>
+        <td>是否开启自动补零</td>
+        <td>Boolean</td>
+        <td>——</td>
+        <td>false</td>
+      </tr>
+      <tr>
+        <td>delColor</td>
+        <td>删除态价格删除线颜色</td>
+        <td>String</td>
+        <td>——</td>
+        <td>——</td>
+      </tr>
+      <tr>
+        <td>valueColor</td>
+        <td>设置价格数字颜色</td>
+        <td>String</td>
+        <td>——</td>
+        <td>——</td>
+      </tr>
+      <tr>
+        <td>unitColor</td>
+        <td>设置价格单位颜色</td>
+        <td>String</td>
+        <td>——</td>
+        <td>——</td>
+      </tr>
+      <tr>
+        <td>valueSize</td>
+        <td>设置价格数字大小（单位px）</td>
+        <td>String</td>
+        <td>——</td>
+        <td>14</td>
+      </tr>
+      <tr>
+        <td>unitSize</td>
+        <td>设置价格数字大小（单位px）</td>
+        <td>String</td>
+        <td>——</td>
+        <td>——</td>
+      </tr>
+      <tr>
+        <td>valueBold</td>
+        <td>设置价格单位字体粗细</td>
+        <td>String</td>
+        <td>——</td>
+        <td>——</td>
+      </tr>
+      <tr>
+        <td>unitBold</td>
+        <td>设置价格单位字体粗细</td>
+        <td>String</td>
+        <td>——</td>
+        <td>——</td>
+      </tr>
+    </table>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "PriceProps",
+  data() {
+    return {}
+  }
+}
+</script>
+
+<style scoped>
+table {
+  display: table;
+  border-collapse: collapse;
+}
+table td {
+  text-align: center;
+}
+</style>

@@ -1,0 +1,18 @@
+language: node_js # node环境
+node_js:
+  - lts/*
+script:
+  - npm run docs:build # 执行命令
+deploy:
+  provider: pages
+  skip-cleanup: true
+  local_dir: docs/.vuepress/dist # 部署的文件夹文件
+  github-token: a05175065fb5f9eb5111c7b1fe5f3716a532791f # travis服务上的token变量
+  target-branch: gh-pages # 集成发布到gh-pages上
+  keep-history: true
+  on:
+    branch: master
+# a05175065fb5f9eb5111c7b1fe5f3716a532791f
+# git config --global user.name "zhanghaifeng213"
+# git config --global user.email "haifeng.zhang1@outlook.com"
+# ssh-keygen -t rsa -C "haifeng.zhang1@outlook.com"
